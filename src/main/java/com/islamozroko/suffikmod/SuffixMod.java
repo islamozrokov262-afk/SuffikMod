@@ -25,6 +25,7 @@ public class SuffixMod implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        // MODIFY_CHAT регистрирует событие для изменения текста
         ClientSendMessageEvents.MODIFY_CHAT.register((message) -> {
             if (message != null && !message.isEmpty()) {
                 String randomSmiley = SMILEYS[random.nextInt(SMILEYS.length)];
