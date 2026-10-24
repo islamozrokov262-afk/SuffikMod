@@ -12,7 +12,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
       - name: Build with Gradle
-        run: gradle build
+        run: gradle build --refresh-dependencies
       - uses: actions/upload-artifact@v4
         with:
           name: mod-jar
