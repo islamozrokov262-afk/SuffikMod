@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "suffikmod",
+  "version": "1.0.0",
+  "name": "Suffiks Mod",
+  "description": "Adds random smileys to chat messages.",
+  "authors": [
+    "islamozroko"
+  ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "icon": "assets/suffikmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.islamozroko.suffikmod.SuffixMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
